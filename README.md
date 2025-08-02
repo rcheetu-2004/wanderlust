@@ -37,29 +37,30 @@ Wanderlust is a full-stack travel platform where users can explore, list, and ma
 
 ## 📂 Project Structure
 
+```
 wanderlust/
-├── controllers/ # Route logic for CRUD operations
-├── models/ # Mongoose models (User, Campground, Review)
-├── routes/ # Express routers for users, listings, reviews
-├── views/ # EJS templates (partials, pages)
-│ ├── listings/
-│ ├── users/
-│ └── partials/
-├── public/ # Static files (CSS, JS, images)
-├── utils/ # Mapbox, Cloudinary config, helpers
-├── middleware/ # Custom middleware (auth, error handling)
-├── .env # Environment variables
-├── app.js # Express app entry point
+├── controllers/       # Route logic for CRUD operations
+├── models/            # Mongoose models (User, Campground, Review)
+├── routes/            # Express routers for users, listings, reviews
+├── views/             # EJS templates (partials, pages)
+│   ├── listings/
+│   ├── users/
+│   └── partials/
+├── public/            # Static files (CSS, JS, images)
+├── utils/             # Mapbox, Cloudinary config, helpers
+├── middleware/        # Custom middleware (auth, error handling)
+├── .env               # Environment variables
+├── app.js             # Express app entry point
 └── package.json
-
+```
 
 ---
 
-## 🌐 
+## 🌐 Environment Variables
 
 Create a `.env` file in the root directory and add the following:
 
-
+```
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 SESSION_SECRET=your_secret_key
@@ -67,17 +68,19 @@ CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 MAPBOX_TOKEN=your_mapbox_token
-
+```
 
 ---
+
 ## 📦 Installation
 
 Follow these steps:
 
+```bash
 git clone https://github.com/your-username/wanderlust.git
 cd wanderlust
 npm install
-
+```
 
 ---
 
@@ -88,7 +91,3 @@ npm install
 [![GitHub](https://img.shields.io/badge/GitHub-rydhamcheetu-333?style=for-the-badge&logo=github)](https://github.com/rydhamcheetu)
 
 > Feel free to reach out for collaborations, suggestions, or queries related to this project.
-
----
-
-
