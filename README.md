@@ -1,134 +1,90 @@
-<h1 align="center">🌍 Wanderlust – Travel Listing Web Application</h1>
+# 🌍 Wanderlust – Travel Listing Web Application
 
-<p align="center">
-  A full-stack travel platform where users can explore, list, and manage accommodations securely. Built using the MERN stack with Mapbox and Cloudinary integrations.
-</p>
+Wanderlust is a full-stack travel platform where users can explore, list, and manage accommodations securely. Built using the MERN stack with Mapbox for maps and Cloudinary for image hosting.
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Backend-Express.js-blue" />
-  <img src="https://img.shields.io/badge/Database-MongoDB-green" />
-  <img src="https://img.shields.io/badge/Auth-JWT%20%7C%20Bcrypt-yellow" />
-  <img src="https://img.shields.io/badge/View-Engine-EJS-critical" />
-</div>
+![Backend](https://img.shields.io/badge/Backend-Node.js-informational?style=flat&logo=node.js&logoColor=white&color=339933)
+![Framework](https://img.shields.io/badge/Express.js-Backend-blue.svg?logo=express)
+![Database](https://img.shields.io/badge/Database-MongoDB-brightgreen.svg?logo=mongodb)
+![Auth](https://img.shields.io/badge/Auth-JWT%20%7C%20Bcrypt-yellow.svg)
+![Cloud](https://img.shields.io/badge/Cloudinary-Image%20Hosting-blueviolet?logo=cloudinary)
+![Map](https://img.shields.io/badge/Mapbox-Map-005eff?logo=mapbox)
 
 ---
 
-## ✨ Overview
+## 🧠 Features
 
-**Wanderlust** is a dynamic web platform where users can:
-- 🔐 Register and login securely
-- 🏠 Post and manage their own accommodation listings
-- 📍 Visualize listing locations on interactive maps
-- 📷 Upload multiple property images with Cloudinary
-- ✍️ View, edit, and delete listings via intuitive UI
-
----
-
-## 🚀 Live Demo
-
-> 🔗 Coming Soon – Add your hosted link here  
-> 💡 Tip: Use [Render](https://render.com), [Vercel](https://vercel.com), or [Cyclic](https://www.cyclic.sh/) for deployment
-
----
-
-## 📸 Screenshots
-
-> Add high-quality images like:
-> - 🖼 Homepage
-> - ✍️ Listing Form
-> - 🧭 Map View
-> - 📱 Mobile Responsive Views
+- 🔐 User authentication with session management
+- 🏕️ Campground listing (CRUD)
+- 🌍 Map integration (Mapbox)
+- 🖼️ Image upload (Cloudinary)
+- 💬 Reviews & average ratings
+- 🛡️ Secure headers, validation, and sanitization
 
 ---
 
 ## 🛠 Tech Stack
 
-| Layer       | Technologies Used                           |
-|-------------|----------------------------------------------|
-| Frontend    | EJS, Bootstrap 5, HTML, CSS, JavaScript      |
-| Backend     | Node.js, Express.js                          |
-| Database    | MongoDB (with Mongoose ORM)                  |
-| Auth        | JWT, bcrypt, express-session, passport       |
-| Upload      | Multer, Cloudinary                           |
-| Maps        | Mapbox GL JS                                 |
-| Tools       | dotenv, method-override, connect-flash       |
+| Layer       | Tech                            |
+|------------|----------------------------------|
+| Frontend   | EJS, Bootstrap 5, HTML, CSS      |
+| Backend    | Node.js, Express                 |
+| Database   | MongoDB, Mongoose                |
+| Auth       | Passport.js, Bcrypt              |
+| Tools      | Multer, Cloudinary, Mapbox       |
+| Security   | Helmet, CSURF, express-validator |
 
 ---
 
-## 💡 Key Features
+## 📂 Project Structure
 
-### 👤 Authentication
-- Secure JWT login & registration
-- Password encryption with bcrypt
-- Session & flash message handling
-
-### 🏠 Listing Management
-- Add, edit, delete accommodations
-- Upload multiple images per listing
-- Display listing locations with Mapbox
-
-### 📍 Interactive Map Integration
-- Auto geocode locations on listing creation
-- Show listings on a dynamic map with markers
-
-### 📋 UI/UX Enhancements
-- Clean and responsive layout using Bootstrap
-- Flash alerts for form validation and actions
-- Modular and DRY code with EJS partials
-
----
-
-## 🗂 Project Structure
-
-```bash
-Wanderlust/
-│
-├── models/               # Mongoose schemas (User, Listing, Review)
-├── routes/               # Express routers (users, listings, reviews)
-├── controllers/          # Route logic for CRUD operations
-├── views/                # EJS templates (partials, pages)
-│   ├── listings/
-│   ├── users/
-│   └── partials/
-├── public/               # Static files (CSS, JS, images)
-├── utils/                # Mapbox, Cloudinary config, helpers
-├── middleware/           # Custom middleware (auth, error handling)
-├── .env                  # Environment variables
-├── app.js                # Express app entry point
+wanderlust/
+├── controllers/ # Route logic for CRUD operations
+├── models/ # Mongoose models (User, Campground, Review)
+├── routes/ # Express routers for users, listings, reviews
+├── views/ # EJS templates (partials, pages)
+│ ├── listings/
+│ ├── users/
+│ └── partials/
+├── public/ # Static files (CSS, JS, images)
+├── utils/ # Mapbox, Cloudinary config, helpers
+├── middleware/ # Custom middleware (auth, error handling)
+├── .env # Environment variables
+├── app.js # Express app entry point
 └── package.json
 
+
+---
+
+## 🌐 Environment Variables (`.env` Setup)
+
+Create a `.env` file in the root and add:
+
+```env
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 SESSION_SECRET=your_secret_key
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-💡 Never upload .env to GitHub. Add it to .gitignore.
+MAPBOX_TOKEN=your_mapbox_token
 
-🧪 How to Run Locally
+## 📥 Installation Steps
 
 # 1. Clone the repository
-git clone https://github.com/yourusername/wanderlust.git
+git clone https://github.com/your-username/wanderlust.git
 cd wanderlust
 
 # 2. Install dependencies
 npm install
 
-# 3. Setup environment variables
-#    Create a `.env` file using the format above
+# 3. Create a .env file
+cp .env.example .env
 
-🧠 What I Learned
-Building scalable RESTful applications with Express
+# 4. Fill in your environment variables (see below)
 
-Handling secure JWT + session-based authentication
+# 5. Start MongoDB (if not running)
+mongod
 
-Using Cloudinary and Multer for media upload pipelines
+# 6. Run the app
+npm run dev
 
-Integrating Mapbox for real-time geolocation
-
-Writing DRY, modular, production-level backend code
-
-👨‍💻 Author
-Rydham Cheetu
-📧 rydhamcheetu4@gmail.com
-🔗 LinkedIn | GitHub
