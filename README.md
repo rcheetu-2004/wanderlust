@@ -68,10 +68,12 @@ CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 MAPBOX_TOKEN=your_mapbox_token
 
-### 📦 Installation & Setup
+## 📦 Installation
 
 ```bash
 # Clone the repository
 git clone https://github.com/your-username/wanderlust.git
 cd wanderlust
 npm install
+
+
