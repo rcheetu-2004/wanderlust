@@ -68,23 +68,10 @@ CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 MAPBOX_TOKEN=your_mapbox_token
 
-## 📥 Installation Steps
+### 📦 Installation & Setup
 
-# 1. Clone the repository
+```bash
+# Clone the repository
 git clone https://github.com/your-username/wanderlust.git
 cd wanderlust
-
-# 2. Install dependencies
 npm install
-
-# 3. Create a .env file
-cp .env.example .env
-
-# 4. Fill in your environment variables (see below)
-
-# 5. Start MongoDB (if not running)
-mongod
-
-# 6. Run the app
-npm run dev
-
