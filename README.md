@@ -55,11 +55,10 @@ wanderlust/
 
 ---
 
-## 🌐 Environment Variables (`.env` Setup)
+## 🌐 Environment Variables
 
-Create a `.env` file in the root and add:
+Create a `.env` file in the root directory and add the following:
 
-```env
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 SESSION_SECRET=your_secret_key
@@ -68,6 +67,9 @@ CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 MAPBOX_TOKEN=your_mapbox_token
 
+
+---
+
 ## 📦 Installation
 
 ```bash
@@ -75,5 +77,6 @@ MAPBOX_TOKEN=your_mapbox_token
 git clone https://github.com/your-username/wanderlust.git
 cd wanderlust
 npm install
+
 
 
