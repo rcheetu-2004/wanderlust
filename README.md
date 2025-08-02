@@ -55,9 +55,10 @@ wanderlust/
 
 ---
 
-## 🌐 Environment Variables
+## 🌐 
 
 Create a `.env` file in the root directory and add the following:
+
 
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
@@ -69,22 +70,25 @@ MAPBOX_TOKEN=your_mapbox_token
 
 
 ---
-
 ## 📦 Installation
 
-# Clone the repository
+Follow these steps:
+
 git clone https://github.com/your-username/wanderlust.git
 cd wanderlust
 npm install
+
 
 ---
 
 ## 📞 Contact
 
-[![Email](https://img.shields.io/badge/Email-rydhamcheetu4@gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rydhamcheetu4@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rydham_Cheetu-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rydhamcheetu)
+[![Email](https://img.shields.io/badge/Email-rydhamcheetu4@gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rydhamcheetu4@gmail.com)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rydham_Cheetu-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rydhamcheetu)  
 [![GitHub](https://img.shields.io/badge/GitHub-rydhamcheetu-333?style=for-the-badge&logo=github)](https://github.com/rydhamcheetu)
 
-Feel free to reach out for collaborations, suggestions, or queries related to this project.
+> Feel free to reach out for collaborations, suggestions, or queries related to this project.
+
+---
 
 
