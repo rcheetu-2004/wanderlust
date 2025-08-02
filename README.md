@@ -87,7 +87,7 @@ npm install
 ## 📞 Contact
 
 [![Email](https://img.shields.io/badge/Email-rydhamcheetu4@gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rydhamcheetu4@gmail.com)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rydham_Cheetu-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rydhamcheetu)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rydham_Cheetu-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rydham-cheetu)  
 [![GitHub](https://img.shields.io/badge/GitHub-rydhamcheetu-333?style=for-the-badge&logo=github)](https://github.com/rydhamcheetu)
 
 > Feel free to reach out for collaborations, suggestions, or queries related to this project.
